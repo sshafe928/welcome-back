@@ -1,36 +1,49 @@
 $font-family: 'Ubuntu', sans-serif;
-$font-color: rgb(143, 69, 69);
+$font-color: rgb(106, 189, 127);
+body {
+    background-color: rgb(251, 246, 217);
+}
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    margin-top: 2%;
     font-family: $font-family;
 
     h1 {
     font-weight: bold;
     color: $font-color;
-    margin-right: 820px;
+    margin: 0; /* Removed margin-right */
+    font-size: xx-large;
     }
 
     ul {
-    list-style-type: none;
-    display: flex;
+    list-style-type: none; /* Removes bullet points */
+    display: flex; /* Aligns list items horizontally */
     align-items: center;
-    margin-bottom: 210px;
+    margin: 0; /* Removed margin-bottom */
     font-size: 18px;
     font-weight: bolder;
-
+    
+    .right-align {
+        justify-content: flex-end;
+        display: flex; // Ensure the items stay in a line
+    }
     li {
-        margin-top: 15px;
-        margin-left: 10px;
-        margin-right: 30px;
+      display: flex; /* Optional if you need flex properties on list items */
+      margin: 0 15px; /* Adjust margins as needed */
+      padding: 0; /* Ensure padding does not affect alignment */
     }
     }
 }
 
+#special_li {
+    
+}
 a {
     text-decoration: none;
     color: $font-color;
 }
+

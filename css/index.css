@@ -1,30 +1,40 @@
+body {
+  background-color: rgb(251, 246, 217);
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  margin-top: 2%;
   font-family: "Ubuntu", sans-serif;
 }
 header h1 {
   font-weight: bold;
-  color: rgb(143, 69, 69);
-  margin-right: 820px;
+  color: rgb(106, 189, 127);
+  margin: 0; /* Removed margin-right */
+  font-size: xx-large;
 }
 header ul {
-  list-style-type: none;
-  display: flex;
+  list-style-type: none; /* Removes bullet points */
+  display: flex; /* Aligns list items horizontally */
   align-items: center;
-  margin-bottom: 210px;
+  margin: 0; /* Removed margin-bottom */
   font-size: 18px;
   font-weight: bolder;
 }
+header ul .right-align {
+  justify-content: flex-end;
+  display: flex;
+}
 header ul li {
-  margin-top: 15px;
-  margin-left: 10px;
-  margin-right: 30px;
+  display: flex; /* Optional if you need flex properties on list items */
+  margin: 0 15px; /* Adjust margins as needed */
+  padding: 0; /* Ensure padding does not affect alignment */
 }
 
 a {
   text-decoration: none;
-  color: rgb(143, 69, 69);
+  color: rgb(106, 189, 127);
 }/*# sourceMappingURL=index.css.map */
