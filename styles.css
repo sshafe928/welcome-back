@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
     font-family: Century Gothic;
+    
 }
 
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./9eb48cd99e16a0b7a6d2d2ec5107f843.jpg);
+    background-image: linear-gradient(rgba(29, 160, 241, 0.5), rgba(0,0,0,0)), url(./beach.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
     min-height: 100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 ul {
@@ -56,18 +59,22 @@ ul li.active a {
 .title {
     position: absolute;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: 20%;
 }
 
 .title h1 {
     color: #fff;
     font-size: 85px;
+    font-size:100px;
+    position:relative;
+    cursor: pointer;
+    transition: all 0.2s ease; 
+    transform: perspective(1000px) rotateX(0deg); 
 }
 
 .button {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -117,4 +124,53 @@ ul li.active a {
 
 ul li:hover .sub-menu {
     display: block;
+}
+
+.superShadow {
+    text-shadow:     0 1px 0 hsl(174,5%,80%),
+                    0 2px 0 hsl(174,5%,75%),
+                    0 3px 0 hsl(174,5%,70%),
+                    0 4px 0 hsl(174,5%,66%),
+                    0 5px 0 hsl(174,5%,64%),
+                    0 6px 0 hsl(174,5%,62%),
+                    0 7px 0 hsl(174,5%,61%),
+                    0 8px 0 hsl(174,5%,60%),
+
+                    0 0 5px rgba(0,0,0,.05),
+                    0 1px 3px rgba(0,0,0,.2),
+                    0 3px 5px rgba(0,0,0,.2),
+                    0 5px 10px rgba(0,0,0,.2),
+                    0 10px 10px rgba(0,0,0,.2),
+                    0 20px 20px rgba(0,0,0,.3);
+}
+
+strong{
+    font-size:200px;
+}
+
+.plane {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    background: url('plane.png') no-repeat center center; /* Add your plane image here */
+    background-size: contain; /* Scale image to fit */
+    transform: rotate(0deg); /* Plane can be rotated if needed */
+    animation: flyAcross 10s linear infinite; /* Adjust duration and timing function */
+}
+
+@keyframes flyAcross {
+    0% {
+        transform: translateX(-550px); /* Start from left off-screen */
+    }
+    10% {
+        transform: translateX(-550px); /* Start from left off-screen */
+    }
+    50% {
+        transform: translateX(1050px); /* Start from left off-screen */
+        transform: translateY(250px);
+    }
+
+    100% {
+        transform: translateX(1500px); /* Move to right off-screen */
+    }
 }
