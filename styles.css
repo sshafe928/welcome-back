@@ -59,7 +59,8 @@ ul li.active a {
 .title {
     position: absolute;
     top: 40%;
-    margin-left: 20%;
+    margin-left: 23%;
+    display:inline
 }
 
 .title h1 {
@@ -156,6 +157,7 @@ strong{
     background-size: contain; /* Scale image to fit */
     transform: rotate(0deg); /* Plane can be rotated if needed */
     animation: flyAcross 10s linear infinite; /* Adjust duration and timing function */
+    animation-iteration-count: 1;
 }
 
 @keyframes flyAcross {
