@@ -111,7 +111,7 @@ ul li.active a {
 }
 
 .sub-menu ul li {
-    width: 200px; /* Adjust width if needed */
+    width:120px; /* Adjust width if needed */
     padding: 10px;
     border-bottom: 1px solid #fff;
     background: transparent;

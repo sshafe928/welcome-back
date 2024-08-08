@@ -5,21 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li class="has-submenu">
+                    <a href="#">Places</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="location.html?country=germany">Germany</a></li>
+                            <li><a href="location.html?country=france">France</a></li>
+                            <li><a href="location.html?country=austria">Austria</a></li>
+                            <li><a href="location.html?country=poland">Netherlands</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Contact Us</h1>
+        <h1 class="superShadow">Contact Us</h1>
         <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
