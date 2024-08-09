@@ -1,18 +1,33 @@
+@font-face {
+    font-family: masio;
+    src: url(./I\ Heart\ Summer\ -\ TTF.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Century Gothic;
+    font-family: masio;
     
 }
-
-header {
-    background-image: linear-gradient(rgba(29, 160, 241, 0.5), rgba(0,0,0,0)), url(./beach.jpg);
+body{
+    background-image: linear-gradient(rgba(29, 160, 241, 0.5), rgba(0,0,0,0)), url(./images/beach.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
+}
+header {
     min-height: 100px;
     overflow-y: hidden;
     overflow-x: hidden;
+    background-color: rgba(53, 53, 53, 0.548);
+    border: rgba(34, 34, 34, 0.801);
+    box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.76);
+    
+}
+
+nav{
+    font-family: masio;
+    margin-left: -12%;
 }
 
 ul {
@@ -24,7 +39,7 @@ ul {
 
 ul li {
     display: inline-block;
-    position: relative; /* Added for submenu positioning */
+    position: relative;
 }
 
 ul li a {
@@ -59,14 +74,13 @@ ul li.active a {
 .title {
     position: absolute;
     top: 40%;
-    margin-left: 23%;
-    display:inline
+    display:inline;
+    margin-left: 25%;
 }
 
 .title h1 {
     color: #fff;
-    font-size: 85px;
-    font-size:100px;
+    font-size:140px;
     position:relative;
     cursor: pointer;
     transition: all 0.2s ease; 
@@ -94,38 +108,6 @@ ul li.active a {
     color: #000;
 }
 
-.sub-menu {
-    display: none;
-    position: absolute;
-    top: 100%; /* Align with the bottom of the parent li */
-    left: 0;
-    background-color: rgb(143, 178, 235);
-    border: 1px solid #fff;
-    z-index: 1000; /* Ensure it appears on top */
-}
-
-.sub-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sub-menu ul li {
-    width:120px; /* Adjust width if needed */
-    padding: 10px;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    transition: 0.4s ease;
-    text-align: left;
-}
-
-.sub-menu ul li:last-child {
-    border-bottom: none;
-}
-
-ul li:hover .sub-menu {
-    display: block;
-}
 
 .superShadow {
     text-shadow:     0 1px 0 hsl(174,5%,80%),
@@ -174,5 +156,25 @@ strong{
 
     100% {
         transform: translateX(1500px); /* Move to right off-screen */
+    }
+}
+
+/* Phones */
+@media only screen and (max-width: 600px) {
+    .button {
+        position: absolute;
+        top: 78%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+  /* Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .button {
+        position: absolute;
+        top: 78%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }

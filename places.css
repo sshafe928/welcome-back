@@ -1,0 +1,70 @@
+@font-face {
+    font-family: masio;
+    src: url(./I\ Heart\ Summer\ -\ TTF.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: masio;
+    
+}
+body{
+    background-image: url(./images/earth.jpg);
+    background-size: cover;
+}
+
+header {
+    min-height: 100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: rgba(34, 34, 34, 0.76);
+    border: rgba(34, 34, 34, 0.801);
+    box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.76);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    float: left;
+    list-style-type: none;
+    margin-top: 30px;
+
+}
+
+ul li {
+    display: inline-block;
+    position: relative; /* Added for submenu positioning */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+img{
+    max-height: 500px;
+    max-width: 500px;
+}
+
+main{
+    display: flex;
+    
+}
