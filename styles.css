@@ -19,6 +19,7 @@ header {
     min-height: 100px;
     overflow-y: hidden;
     overflow-x: hidden;
+<<<<<<< Updated upstream
     background-color: rgba(53, 53, 53, 0.548);
     border: rgba(34, 34, 34, 0.801);
     box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.76);
@@ -28,6 +29,9 @@ header {
 nav{
     font-family: masio;
     margin-left: -12%;
+=======
+    
+>>>>>>> Stashed changes
 }
 
 ul {
