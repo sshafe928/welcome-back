@@ -19,7 +19,6 @@ header {
     min-height: 100px;
     overflow-y: hidden;
     overflow-x: hidden;
-<<<<<<< Updated upstream
     background-color: rgba(53, 53, 53, 0.548);
     border: rgba(34, 34, 34, 0.801);
     box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.76);
@@ -29,9 +28,6 @@ header {
 nav{
     font-family: masio;
     margin-left: -12%;
-=======
-    
->>>>>>> Stashed changes
 }
 
 ul {
@@ -73,13 +69,15 @@ ul li.active a {
 .main {
     max-width: 1200px;
     margin: auto;
+    
 }
 
 .title {
     position: absolute;
     top: 40%;
-    display:inline;
-    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .title h1 {
@@ -89,6 +87,7 @@ ul li.active a {
     cursor: pointer;
     transition: all 0.2s ease; 
     transform: perspective(1000px) rotateX(0deg); 
+
 }
 
 .button {

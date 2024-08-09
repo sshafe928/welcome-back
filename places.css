@@ -60,10 +60,9 @@ ul li.active a {
 }
 
 img{
-    max-height: 370px;
-    max-width: 370px;
-    border-radius: 500px;
-    box-shadow: 0 0 13px 2px rgb(32, 229, 255);
+    border-radius: 60%;
+    box-shadow: 0 0 13px 2px rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.767);
 }
 
 main{
@@ -76,26 +75,21 @@ main h1{
     font-size: 70px;
 }
 .au{
-    margin-top: 18%;
-    margin-left: 3%;
+
 }
 
 .az{
-    margin-top: 20%;
-    margin-left: 2%;
+
 }
 
 .germ{
-    margin-left: 2%;
-    margin-top: 11%;
+
 }
 
 .neth{
-    margin-top: 3%;
-    margin-left: 4%;
+
 }
 
 .fr{
-    margin-top: 6%;
-    margin-left: 1%;
+
 }
