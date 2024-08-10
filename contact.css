@@ -1,104 +1,118 @@
+/* Define a custom font for the webpage */
 @font-face {
-    font-family: masio;
-    src: url(./I\ Heart\ Summer\ -\ TTF.ttf);
+    font-family: masio; /* Custom font name */
+    src: url(./I\ Heart\ Summer\ -\ TTF.ttf); /* Font file location */
 }
 
+/* Reset margin and padding for all elements and apply custom font */
 * {
     margin: 0;
     padding: 0;
     font-family: masio;
-    
-}
-body{
-    background-image: url(./images/daisy.jpg);
-    background-size: cover;
 }
 
+/* Set background image and size for the body */
+body {
+    background-image: url(./images/daisy.jpg); /* Background image path */
+    background-size: cover; /* Ensure the image covers the entire background */
+}
+
+/* Style for the header section */
 header {
-    min-height: 100px;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    background-color: rgba(34, 34, 34, 0.76);
-    border: rgba(34, 34, 34, 0.801);
-    box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.76);
+    min-height: 100px; /* Minimum height of the header */
+    overflow-y: hidden; /* Hide vertical overflow */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    background-color: rgba(34, 34, 34, 0.76); /* Header background color with opacity */
+    border: rgba(34, 34, 34, 0.801); /* Border color */
+    box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.76); /* Shadow for a 3D effect */
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Style the navigation bar */
+nav {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center-align items horizontally */
+    align-items: center; /* Center-align items vertically */
 }
 
+/* Style for the unordered list in the nav */
 ul {
-    float: left;
-    list-style-type: none;
-    margin-top: 30px;
-
+    float: left; /* Float the list to the left */
+    list-style-type: none; /* Remove default list styling */
+    margin-top: 30px; /* Top margin for spacing */
 }
 
+/* Style each list item in the navigation */
 ul li {
-    display: inline-block;
-    position: relative; /* Added for submenu positioning */
+    display: inline-block; /* Display list items inline */
+    position: relative; /* Enable positioning for submenus */
 }
 
+/* Style links in the list */
 ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.5s ease;
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color */
+    padding: 5px 20px; /* Padding around text */
+    border: 1px solid transparent; /* Transparent border for layout purposes */
+    transition: 0.5s ease; /* Smooth transition for hover effect */
 }
 
+/* Hover effect for links */
 ul li a:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #fff; /* White background on hover */
+    color: #000; /* Black text color on hover */
 }
 
+/* Style for active list item links */
 ul li.active a {
-    background-color: #fff;
-    color: #000;
+    background-color: #fff; /* White background for active state */
+    color: #000; /* Black text color for active state */
 }
 
-.smile{
-    float: left;
-    z-index: 10;
-    position: absolute;
-    top: 1%;
-    left: 11%;
+/* Style for smile icon */
+.smile {
+    float: left; /* Float to the left */
+    z-index: 10; /* Ensure it appears above other elements */
+    position: absolute; /* Absolute positioning */
+    top: 1%; /* Position from the top */
+    left: 11%; /* Position from the left */
 }
 
-.smile img{
-    width: 100%;
-    height: 100%;
-    rotate: 20deg;
+/* Style for the smile icon image */
+.smile img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    rotate: 20deg; /* Rotate the image */
 }
 
-.smile2{
-    float: right;
-    z-index: 10;
-    position: absolute;
-    top: 45%;
-    right: 11%;
+/* Style for the second smile icon */
+.smile2 {
+    float: right; /* Float to the right */
+    z-index: 10; /* Ensure it appears above other elements */
+    position: absolute; /* Absolute positioning */
+    top: 45%; /* Position from the top */
+    right: 11%; /* Position from the right */
 }
 
-.smile2 img{
-    width: 100%;
-    height: 100%;
+/* Style for the second smile icon image */
+.smile2 img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
 }
 
+/* Style for the main content area */
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    margin-top: 5%;
-    padding: 20px;
-    background: rgba(255, 254, 254, 0.363);
-    backdrop-filter: blur(10px);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    color:#000000;
-
+    max-width: 800px; /* Maximum width of the main content */
+    margin: 20px auto; /* Center-align with margin */
+    margin-top: 5%; /* Top margin for spacing */
+    padding: 20px; /* Padding inside the content area */
+    background: rgba(255, 254, 254, 0.363); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect for background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Light shadow for depth */
+    color: #000000; /* Text color */
 }
 
+/* Text shadow effect for enhanced readability */
 .superShadow {
     text-shadow:     0 1px 0 hsl(174,5%,80%),
                     0 2px 0 hsl(174,5%,75%),
@@ -114,54 +128,61 @@ main {
                     0 3px 5px rgba(0,0,0,.2),
                     0 5px 10px rgba(0,0,0,.2),
                     0 10px 10px rgba(0,0,0,.2),
-                    0 20px 20px rgba(0,0,0,.3);
+                    0 20px 20px rgba(0,0,0,.3); /* Multiple layers of text shadow for a 3D effect */
 }
 
+/* Style for main headings */
 h1 {
-    margin-top: 0;
-    margin-left:38%;
-    font-family: masio;
-    font-size:xx-large;
+    margin-top: 0; /* Remove top margin */
+    margin-left: 38%; /* Center-align heading */
+    font-family: masio; /* Use custom font */
+    font-size: xx-large; /* Larger font size */
 }
 
+/* Style for forms */
 form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Flexbox layout for form elements */
+    flex-direction: column; /* Stack elements vertically */
 }
 
+/* Style for form labels */
 label {
-    margin: 10px 0 5px;
-    font-weight: bold;
+    margin: 10px 0 5px; /* Margin around labels */
+    font-weight: bold; /* Bold text */
 }
 
+/* Style for input and textarea elements */
 input, textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    background: rgba(255, 254, 254, 0.363);
+    margin-bottom: 15px; /* Bottom margin for spacing */
+    padding: 10px; /* Padding inside fields */
+    border: 1px solid #000000; /* Black border */
+    border-radius: 4px; /* Rounded corners */
+    background: rgba(255, 254, 254, 0.363); /* Semi-transparent background */
 }
 
+/* Style for buttons */
 button {
-    padding: 10px 15px;
-    background: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+    padding: 10px 15px; /* Padding inside the button */
+    background: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
 }
 
+/* Hover effect for buttons */
 button:hover {
-    background: #555;
+    background: #555; /* Lighter background on hover */
 }
 
+/* Style for footer */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 10px 0; /* Padding inside footer */
+    position: fixed; /* Fix position at the bottom */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
 }

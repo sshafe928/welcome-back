@@ -1,183 +1,200 @@
+/* Define custom fonts for the website */
 @font-face {
     font-family: masio;
-    src: url(./I\ Heart\ Summer\ -\ TTF.ttf);
+    src: url(./I\ Heart\ Summer\ -\ TTF.ttf); /* Path to custom font */
 }
 
+/* Reset default margin and padding, and set global font family */
 * {
     margin: 0;
     padding: 0;
-    font-family: masio;
-    
+    font-family: masio; /* Apply custom font to all elements */
 }
-body{
-    background-image: linear-gradient(rgba(29, 160, 241, 0.5), rgba(0,0,0,0)), url(./images/beach.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+
+/* Body styling */
+body {
+    background-image: linear-gradient(rgba(29, 160, 241, 0.5), rgba(0,0,0,0)), url(./images/beach.jpg); /* Gradient overlay with background image */
+    height: 100vh; /* Full viewport height */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
 }
+
+/* Header styling */
 header {
-    min-height: 100px;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    background-color: rgba(53, 53, 53, 0.548);
-    border: rgba(34, 34, 34, 0.801);
-    box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.76);
-    
+    min-height: 100px; /* Minimum height for the header */
+    overflow-y: hidden; /* Hide vertical overflow */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    background-color: rgba(53, 53, 53, 0.548); /* Semi-transparent background color */
+    border: rgba(34, 34, 34, 0.801); /* Border color (not visible) */
+    box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.76); /* Shadow for depth */
 }
 
-nav{
-    font-family: masio;
-    margin-left: -12%;
+/* Navigation styling */
+nav {
+    font-family: masio; /* Apply custom font */
+    margin-left: -12%; /* Adjust positioning */
 }
 
+/* Unordered list styling for navigation links */
 ul {
-    float: right;
-    list-style-type: none;
-    margin-top: 30px;
-    margin-right:30%;
+    float: right; /* Float the list to the right */
+    list-style-type: none; /* Remove default list styling */
+    margin-top: 30px; /* Margin at the top */
+    margin-right: 30%; /* Margin on the right */
 }
 
+/* List item styling */
 ul li {
-    display: inline-block;
-    position: relative;
+    display: inline-block; /* Display items in a line */
+    position: relative; /* Position relative for any absolute children */
 }
 
+/* Anchor tag styling in the list items */
 ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.5s ease;
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color */
+    padding: 5px 20px; /* Padding around the text */
+    border: 1px solid transparent; /* Transparent border for transition effect */
+    transition: 0.5s ease; /* Smooth transition for hover effect */
 }
 
+/* Hover effect for anchor tags */
 ul li a:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #fff; /* Change background on hover */
+    color: #000; /* Change text color on hover */
 }
 
+/* Style for the active navigation link */
 ul li.active a {
-    background-color: #fff;
-    color: #000;
+    background-color: #fff; /* White background for active link */
+    color: #000; /* Black text color for active link */
 }
 
+/* Styling for the logo image */
 .logo img {
-    float: left;
-    width: 150px;
-    height: auto;
+    float: left; /* Float logo to the left */
+    width: 150px; /* Set width */
+    height: auto; /* Auto adjust height */
 }
 
+/* Main content area styling */
 .main {
-    max-width: 1200px;
-    margin: auto;
-    
+    max-width: 1200px; /* Maximum width */
+    margin: auto; /* Center the content horizontally */
 }
 
+/* Styling for the title section */
 .title {
-    position: absolute;
-    top: 40%;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    position: absolute; /* Absolute positioning */
+    top: 40%; /* Position from the top */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center horizontally */
+    width: 100%; /* Full width */
 }
 
+/* Styling for the main title */
 .title h1 {
-    color: #fff;
-    font-size:140px;
-    position:relative;
-    cursor: pointer;
-    transition: all 0.2s ease; 
-    transform: perspective(1000px) rotateX(0deg); 
-
+    color: #fff; /* White text color */
+    font-size: 140px; /* Font size */
+    position: relative; /* Relative positioning */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.2s ease; /* Smooth transition for all properties */
+    transform: perspective(1000px) rotateX(0deg); /* 3D effect for rotation */
 }
 
+/* Styling for buttons */
 .button {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute; /* Absolute positioning */
+    top: 60%; /* Position from the top */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center vertically */
 }
 
+/* Button styling */
 .btn {
-    border: 1px solid #fff;
-    padding: 5px 20px;
-    color: #fff;
-    transition: 0.6s ease;
-    font-size: 18px;
-    text-decoration: none;
+    border: 1px solid #fff; /* White border */
+    padding: 5px 20px; /* Padding around the text */
+    color: #fff; /* White text color */
+    transition: 0.6s ease; /* Smooth transition */
+    font-size: 18px; /* Font size */
+    text-decoration: none; /* Remove underline from text */
 }
 
+/* Hover effect for buttons */
 .btn:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #fff; /* White background on hover */
+    color: #000; /* Black text color on hover */
 }
 
-
+/* Shadow effect for text */
 .superShadow {
-    text-shadow:     0 1px 0 hsl(174,5%,80%),
-                    0 2px 0 hsl(174,5%,75%),
-                    0 3px 0 hsl(174,5%,70%),
-                    0 4px 0 hsl(174,5%,66%),
-                    0 5px 0 hsl(174,5%,64%),
-                    0 6px 0 hsl(174,5%,62%),
-                    0 7px 0 hsl(174,5%,61%),
-                    0 8px 0 hsl(174,5%,60%),
-
-                    0 0 5px rgba(0,0,0,.05),
-                    0 1px 3px rgba(0,0,0,.2),
-                    0 3px 5px rgba(0,0,0,.2),
-                    0 5px 10px rgba(0,0,0,.2),
-                    0 10px 10px rgba(0,0,0,.2),
-                    0 20px 20px rgba(0,0,0,.3);
+    text-shadow:     
+        0 1px 0 hsl(174,5%,80%),
+        0 2px 0 hsl(174,5%,75%),
+        0 3px 0 hsl(174,5%,70%),
+        0 4px 0 hsl(174,5%,66%),
+        0 5px 0 hsl(174,5%,64%),
+        0 6px 0 hsl(174,5%,62%),
+        0 7px 0 hsl(174,5%,61%),
+        0 8px 0 hsl(174,5%,60%),
+        0 0 5px rgba(0,0,0,.05),
+        0 1px 3px rgba(0,0,0,.2),
+        0 3px 5px rgba(0,0,0,.2),
+        0 5px 10px rgba(0,0,0,.2),
+        0 10px 10px rgba(0,0,0,.2),
+        0 20px 20px rgba(0,0,0,.3); /* Multiple layers of shadow for a 3D effect */
 }
 
-strong{
-    font-size:200px;
+/* Styling for strong elements */
+strong {
+    font-size: 200px; /* Large font size */
 }
 
+/* Styling for the plane image */
 .plane {
-    position: absolute;
-    width: 100px; /* Adjust size as needed */
-    height: 60px; /* Adjust size as needed */
-    background: url('plane.png') no-repeat center center; /* Add your plane image here */
+    position: absolute; /* Absolute positioning */
+    width: 100px; /* Set width */
+    height: 60px; /* Set height */
+    background: url('plane.png') no-repeat center center; /* Plane image background */
     background-size: contain; /* Scale image to fit */
-    transform: rotate(0deg); /* Plane can be rotated if needed */
-    animation: flyAcross 10s linear infinite; /* Adjust duration and timing function */
-    animation-iteration-count: 1;
+    transform: rotate(0deg); /* Rotation (can be adjusted) */
+    animation: flyAcross 10s linear infinite; /* Animation settings */
+    animation-iteration-count: 1; /* Play animation once */
 }
 
+/* Keyframes for plane animation */
 @keyframes flyAcross {
     0% {
         transform: translateX(-550px); /* Start from left off-screen */
     }
     10% {
-        transform: translateX(-550px); /* Start from left off-screen */
+        transform: translateX(-550px); /* Keep position off-screen */
     }
     50% {
-        transform: translateX(1050px); /* Start from left off-screen */
-        transform: translateY(250px);
+        transform: translateX(1050px); /* Move to the right */
+        transform: translateY(250px); /* Move downwards */
     }
-
     100% {
-        transform: translateX(1500px); /* Move to right off-screen */
+        transform: translateX(1500px); /* End off-screen to the right */
     }
 }
 
-/* Phones */
+/* Responsive styling for phones */
 @media only screen and (max-width: 600px) {
     .button {
-        position: absolute;
-        top: 78%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: absolute; /* Absolute positioning */
+        top: 78%; /* Adjust position */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Center vertically */
     }
 }
 
-  /* Tablets */
+/* Responsive styling for tablets */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .button {
-        position: absolute;
-        top: 78%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: absolute; /* Absolute positioning */
+        top: 78%; /* Adjust position */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Center vertically */
     }
 }

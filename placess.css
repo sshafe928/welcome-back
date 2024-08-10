@@ -1,0 +1,89 @@
+/* Custom font definitions */
+@font-face {
+    font-family: masio;
+    src: url(./I\ Heart\ Summer\ -\ TTF.ttf); /* Path to the custom font */
+}
+
+@font-face {
+    font-family: goals;
+    src: url(./Summer\ Goals.ttf); /* Path to another custom font */
+}
+
+/* Reset margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the body element */
+body {
+    background-image: url(./images/blue.jpg); /* Background image for the body */
+    background-size: cover; /* Cover the entire viewport with the image */
+}
+
+/* Style for the header element */
+header {
+    min-height: 100px; /* Minimum height for the header */
+    overflow-y: hidden; /* Hide vertical overflow */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Style for the navigation bar */
+nav {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    background-color: rgba(34, 34, 34, 0.76); /* Semi-transparent background */
+    border: rgba(34, 34, 34, 0.801); /* Border color */
+    box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.76); /* Shadow for depth */
+    padding-bottom: 2%; /* Padding at the bottom */
+}
+
+/* Style for the unordered list in the navigation */
+ul {
+    float: left; /* Float the list to the left */
+    list-style-type: none; /* Remove default list styling */
+    margin-top: 30px; /* Margin at the top */
+    font-family: masio; /* Apply custom font */
+}
+
+/* Style for list items in the navigation */
+ul li {
+    display: inline-block; /* Display items in a line */
+    position: relative; /* Position relative for submenu if needed */
+}
+
+/* Style for anchor tags in the list items */
+ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color */
+    padding: 5px 20px; /* Padding around the text */
+    border: 1px solid transparent; /* Transparent border for transition effect */
+    transition: 0.5s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for anchor tags */
+ul li a:hover {
+    background-color: #fff; /* Change background on hover */
+    color: #000; /* Change text color on hover */
+}
+
+/* Style for the active navigation link */
+ul li.active a {
+    background-color: #fff; /* White background for active link */
+    color: #000; /* Black text color for active link */
+}
+
+/* Style for the .az class, typically for images */
+.az {
+    max-width: 200px; /* Limit the maximum width */
+    max-height: 200px; /* Limit the maximum height */
+    margin-left: 3%; /* Margin to the left */
+}
+
+/* Style for the main content area */
+main {
+    display: flex; /* Flexbox layout */
+    margin-top: 10%; /* Margin at the top */
+    margin-left: 7%; /* Margin to the left */
+}
