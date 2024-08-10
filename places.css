@@ -3,30 +3,39 @@
     src: url(./I\ Heart\ Summer\ -\ TTF.ttf);
 }
 
+@font-face {
+    font-family: goals;
+    src: url(./Summer\ Goals.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: masio;
+    
     
 }
+
 body{
-    background-image: url(./images/earth.jpg);
+    background-image: url(./images/blue.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 header {
     min-height: 100px;
     overflow-y: hidden;
     overflow-x: hidden;
-    background-color: rgba(34, 34, 34, 0.76);
-    border: rgba(34, 34, 34, 0.801);
-    box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.76);
 }
 
 nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(34, 34, 34, 0.76);
+    border: rgba(34, 34, 34, 0.801);
+    box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.76);
+    padding-bottom: 2%;
 }
 
 ul {
@@ -59,37 +68,56 @@ ul li.active a {
     color: #000;
 }
 
-img{
-    border-radius: 60%;
-    box-shadow: 0 0 13px 2px rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.767);
-}
-
-main{
+body {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
 }
-main h1{
-    background-color: rgba(240, 248, 255, 0.74);
-    padding: 3%;
-    font-size: 70px;
+h1 {
+    color: rgb(37, 89, 138);
+    font-size: 50px;
+    font-family: masio;
+    margin-bottom: 5%;
 }
-.au{
-
+.grid-container {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    div {
+    width: 150px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px black;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
+    &:hover img {
+        filter: grayscale(0);
+    }
+    &:hover {
+        border-color:rgb(81, 121, 197);
+        box-shadow: 0 0 13px 2px rgba(11, 27, 49, 0.788);
+    }
+    img {
+        width: 100%;
+        filter: grayscale(100%);
+        border-radius: 5px;
+        transition: all .25s ease-in-out;
+    }
+    p {
+        margin: 5px 0;
+        padding: 0;
+        text-align: center;
+        font-style: italic;
+    }
+    }
 }
 
-.az{
 
-}
 
-.germ{
 
-}
-
-.neth{
-
-}
-
-.fr{
-
-}
